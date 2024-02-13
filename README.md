@@ -4,7 +4,9 @@ This is a simple Nuxt app to allow the studio to quickly prototype using webhook
 
 This allows the studio to quickly test and prototype webhooks without needing to deploy a new server each time.
 
-[![Usage Video](https://res.cloudinary.com/ejf/image/upload/v1707856101/Screen_Recording_2024-02-13_at_3.27.53_PM.jpg)](https://res.cloudinary.com/ejf/video/upload/v1707856101/Screen_Recording_2024-02-13_at_3.27.53_PM.mov)
+
+
+https://github.com/room302studio/webhook-dev/assets/530073/a564550b-4895-49b3-b162-b28cb88f0231
 
 
 
