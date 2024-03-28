@@ -4,12 +4,15 @@
 
     <div v-for="payload in sortedWebhookPayloads" :key="payload.id"
       class="bg-gray-100 text-gray-950 monospace text-xs p-4 md:p-8 rounded-lg shadow-md mb-4">
-      <pre class="whitespace-pre-wrap">{{ JSON.stringify(payload.payload, null, 2) }}</pre>
+      <!-- <pre class="whitespace-pre-wrap">{{ JSON.stringify(payload.payload, null, 2) }}</pre> -->
+      <VueJsonPretty :data="payload.payload" />
     </div>
   </section>
 </template>
 
 <script setup>
+import VueJsonPretty from 'vue-json-pretty';
+import 'vue-json-pretty/lib/styles.css';
 /*
 // Use the global state in this component
 const store = useAppStore()
