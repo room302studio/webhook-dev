@@ -32,6 +32,11 @@ onMounted(async () => {
   const { data, error } = await supabase
     .from('webhook__payload')
     .select('*')
+    // get the most recent 10 by created_at
+    .order('created_at', { ascending: false })
+    .limit(10)
+        
+
   if (error) {
     console.error('Error fetching webhook payloads', error)
   } else {
